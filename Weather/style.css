@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=400");
+  background-position: bottom;
+  background-size: cover;
+}
+.container {
+  width: 400px;
+  height: min-content;
+  background-color: rgba(233, 227, 227, 0.616);
+  border-radius: 12px;
+  padding: 28px;
+}
+.search-box {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.search-box input {
+  width: 85%;
+  background-color: rgba(212, 16, 144, 0.153);
+  padding: 18px 24px;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 4px 4px 6px rgba(212, 16, 143, 0.792);
+}
+.search-box input::placeholder {
+  color: black;
+}
+.search-box button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgba(212, 16, 144, 0.153);
+  font-size: 25px;
+  padding: 6px 6px;
+  color: black;
+  box-shadow: 4px 4px 6px rgba(212, 16, 143, 0.792);
+}
+.search-box button:hover {
+  background-color: rgba(212, 16, 143, 0.373);
+}
+.weather-img {
+  width: 60%;
+}
+
+.weather-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.about-Weather {
+  margin-block: 20px;
+  text-align: center;
+}
+.temp {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+}
+.temp sup {
+  font-size: 20px;
+  position: absolute;
+  font-weight: 500;
+}
+.about-Weather .dicription {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.humidity,
+.wind {
+  display: flex;
+  align-items: center;
+}
+.humidity {
+  margin-left: 20px;
+}
+.wind {
+  margin-right: 20px;
+}
+.weather-details i {
+  font-size: 36px;
+}
+.weather-details .text {
+  margin-left: 10px;
+  font-size: 16px;
+}
+.text span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.location_notFound {
+  display: flex;
+  margin-block: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.location_notFound img {
+  width: 80%;
+}
+.location_notFound p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(89, 103, 107);
+}
+
+@media screen and (min-width: 1400px){
+  .container {
+    width: 700px;
+  }
+}
